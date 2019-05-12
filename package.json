@@ -1,0 +1,20 @@
+{
+  "name": "usingbabel7",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "node index.js",
+    "build": "rimraf build && babel src -d build src && copyfiles package.json build && copyfiles README.md build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/register": "^7.4.4"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "copyfiles": "^2.1.0",
+    "rimraf": "^2.6.3"
+  }
+}
