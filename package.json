@@ -1,10 +1,10 @@
 {
   "name": "usingbabel7",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "babel-node index.js",
+    "test": "node index.js",
     "build": "rimraf build && babel src -d build src && copyfiles package.json build && copyfiles README.md build",
     "publish-package": "npm run build && cd build && npm publish"
   },
