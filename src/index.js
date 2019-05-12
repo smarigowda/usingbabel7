@@ -1,3 +1,2 @@
-console.log('test');
-const test = require('./main').default;
-test();
+console.log('test.. index.js for compiled code');
+module.exports = require('./main');

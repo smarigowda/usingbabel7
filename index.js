@@ -1,10 +1,10 @@
 require("@babel/register")({
+    ignore: [],
     presets: [
-        ["@babel/preset-env"],
+        [ "@babel/env" ],
     ]
 });
 
-console.log('test');
+console.log('test... !!!....');
 
-const test = require('./src/main').default;
-test();
+module.exports = require('./src/main');
