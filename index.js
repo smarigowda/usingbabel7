@@ -5,6 +5,4 @@ require("@babel/register")({
     ]
 });
 
-console.log('test... !!!....');
-
 module.exports = require('./src/main');

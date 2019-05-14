@@ -1,6 +1,13 @@
 const testFunction = () => {
-    console.log('inside function');
+    console.log('[testFunction] function called...');
 }
-debugger;
-console.log('usingbabel7 testFunction...yeeeyy...yarn link works with babel 7 babel register....');
-export default testFunction;
+// default export
+export default () => {
+    debugger;
+    console.log('[default export function] function called...');
+    console.log('[default export function] Babel 7 ...yeeeyy...yarn link works with Babel 7 babel register....');
+}
+// named export
+export {
+    testFunction
+}
